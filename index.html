@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html land="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Personal Portfolio - Julius Rajaniemi</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9bb33f1107.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+       <div>
+            <nav id="top-bar"><p class="logo" style="font-family: 'BebasFont';">Julius Rajaniemi Portfolio</p></a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Etusivu</a></li>
+                    <li><a href="#about">Tietoja</a></li>
+                    <li><a href="#services">Taidot</a></li>
+                    <li><a href="#portfolio">Projektit</a></li>
+                    <li><a href="#contact">Ota yhteyttä</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="container header-text">
+                <h1>Julius Rajaniemi</h1>
+                <div class="header-description-text">
+                <br><p>Ohjelmisto- ja pelikehittäjä sekä automaatiotestaaja
+                </div>
+            </div>
+       </div> 
+    </div>
+
+<!-----------About//Tietoja----------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/ai-image-str.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">Tietoja</h1>
+                <p>Hei, olen peli- ja ohjelmistokehittäjä, joka myös tekee automaatiotestausta.
+                    <br>Minulla on taustaa C#, RobotFramework, Python, Godot ja Unity -teknologioiden parissa.
+                    <br>Olen jatkuvasti innostunut oppimaan uutta ja parantamaan taitojani.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('experience')">Työkokemus</p>
+                    <p class="tab-links" onclick="opentab('education')">Koulutukset</p>
+                    <p class="tab-links" onclick="opentab('skills')">Muuta</p>
+                </div>
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li><span>Harrastukset</span><br>Vapaa-ajalla tykkään ohjelmoida omia peliprojekteja ja käyn kuntosalilla.</li>
+                        <li><span>Kielitaidot</span><br>Suomi on äidinkieleni, mutta osaan puhua myös hyvin englantia.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents active-tab" id="experience">
+                    <ul>
+                        <li><span>Sebitti Oy - 2024</span><br>Tein monipuolisia ohjelmointitehtäviä, joissa käytettiin RobotFrameworkia, Postmania ja C#. Työharjoittelun kesto oli 3kk.</li>
+                        <li><span>Vident Solutions - 2023</span><br>Tein digitaalisen lautapelin Unity pelimoottorilla. Työharjoittelun kesto oli 3kk.</li>
+                        <li><span>Cor Group Oy - 2022</span><br>Olin kesätöissä Cor Group Oy:ssä 2 viikkoa. Tein yksinkertaisia ohjelmointitehtäviä Pythonilla.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>OSAO Kaukovainion yksikkö tekniikka</span><br> 2022-2024</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----------Skills----------->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-robot"></i>
+                <h2>RobotFramework</h2>
+                <p>Olen tehnyt eri sivustoille automaatiotestauksia RobotFrameworkilla.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>C#</h2>
+                <p>Olen käyttänyt esimerkiksi Unity projekteissa. Osaan perusteet.
+                </p>
+            </div>
+            <div>
+                <i class="fa-brands fa-python"></i>
+                <h2>Python</h2>
+                <p>Olen käyttänyt jonkin verran Pythonia erilaisiin projekteihin, kuten pieneen Raspberry Pi peliin.
+                </p>
+            </div>
+            <div>
+                <i class="fa-brands fa-html5"></i>
+                <h2>HTML / CSS</h2>
+                <p>Olen tehnyt pari nettisivua, kuten tämän portfolion käyttäen html ja css. Osaan perusteet.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-robot"></i>
+                <h2>Godot</h2>
+                <p>Eniten olen käyttänyt Godot pelimoottoria ja minulla on paljon kokemusta sen käytöstä. Olen tehnyt useita projekteja Godotilla.
+                </p>
+            </div>
+            <div>
+                <i class="fa-brands fa-unity"></i>
+                <h2>Unity</h2>
+                <p>Olen tehnyt sekä 3D että 2D projekteja Unityllä. Osaan perusteet.
+                </p>
+            </div>
+            <div>
+                <i class="fa-brands fa-github"></i>
+                <h2>GitHub</h2>
+                <p>Tallennan aina projektini GitHubiin. Osaan perusteet.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----------Portfolio----------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Projektit</h1>
+        <div class="work-list" >
+            <div class="work">
+                <a class="portfolio-link" href="shanking-details.html">
+                    <img src="images/shankingsimpic.png" alt="Shanking Simulator">
+                    <div class="layer">
+                        <h1>Shanking Simulator</h1><br>
+                        <p>Platform taistelu peli, jossa on tarkoituksena eliminoida vastustaja.
+                        Pelissä voi muokata omaa hahmoa ja varusteita. Peli on moninpeli ja sitä voi pelata joko ohjaimella tai näppäimistöllä.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="work">
+                <a class="portfolio-link" href="coj-details.html">
+                    <img src="images/coj-pic.png">
+                    <div class="layer">
+                        <h1>Conqueror Of the Jungle</h1><br>
+                        <p>3D ampumispeli, jossa on tarkoituksena päästä tasoissa eteenpäin eliminoimalla erilaisia vihollisia. Jokaisen tason lopussa on päävihollinen,
+                            jonka jälkeen pääsee etenemään seuraavaan tasoon.
+                            Eliminoimalla vihollisia pelaaja saa pisteitä joilla hän voi päivittää omaa asettaan tai kestävyyttään.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="work">
+                <a class="portfolio-link" href="wizard-tower-details.html">
+                <img src="images/wizard_project_pic_upscaled.png">
+                <div class="layer">
+                    <h1>Wizard Tower</h1><br>
+                    <p>Tarina pohjainen 2D platformer peli, jossa päähahmo lähtee matkalle kukistamaan pahaa velhoa, joka on uhka valtakunnalle.</p>
+                </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----------Contact----------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Ota yhteyttä</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> rajaniemijulius@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> +358 440400762</p>
+            </div>
+            <!-- Removed the form section -->
+        </div>
+    </div>
+</div>
+
+<footer class="copyright">Copyright © 2024 All rights reserved</footer>
+
+<!--
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Ota yhteyttä</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>rajaniemijulius@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>+358 440400762</p>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Nimi:" required>
+                    <input type="email" name="email" placeholder="Sähköposti:" required>
+                    <textarea name="Message" rows="6" placeholder="Viesti:"></textarea>
+                    <button type="submit" class="btn btn2">Lähetä</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2024 All rights reserved</p>
+    </div>
+</div>
+-->
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0"
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200"
+    }
+</script>
+
+</body>
+
+</html>
