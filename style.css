@@ -31,14 +31,6 @@ body{
     color: #fff;
 }
 
-#header {
-    width: 100%;
-    height: 100vh;
-    background-image: url(images/1920x1080-black-ivgflkhu7bxomm84.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
 #top-bar{
     background: #080808;
 }
